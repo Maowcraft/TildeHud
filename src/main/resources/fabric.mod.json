@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "tildehud",
+  "version": "${version}",
+  "name": "TildeHud",
+  "description": "A basic HUD for 20w14infinite, as requested by a member from the Fabric discord server.",
+  "authors": [
+    "Maowcraft"
+  ],
+  "license": "CC0-1.0",
+  "icon": "icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "maowcraft.tildehud.TildeHudClient"
+    ]
+  },
+  "mixins": [
+    "TildeHud.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.8.2+build.194",
+    "fabric": "*"
+  },
+  "custom": {
+    "modmenu:clientsideOnly": true
+  }
+}
